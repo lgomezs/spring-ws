@@ -21,6 +21,7 @@
 	         <property name="inline" value="true" />  
 	          <property name="xsds">  
 	            <list>  
+	             <value>schemas/AccountDetails.xsd</value>  
 	              <value>schemas/AccountDetailsServiceOperations.xsd</value>  
 	            </list>  
 	          </property>  
@@ -31,5 +32,5 @@
 	      <property name="locationUri" value="/endpoints"/>  
     </bean> 
     
-     
+         
 </beans>
