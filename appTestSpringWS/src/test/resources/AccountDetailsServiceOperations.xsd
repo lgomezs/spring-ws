@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/AccountDetailsServiceOperations"
+	xmlns:tns="http://www.example.org/AccountDetailsServiceOperations"
+	elementFormDefault="qualified"
+	xmlns:pref="http://www.example.org/AccountDetails">
+
+
+	<import schemaLocation="AccountDetails.xsd" namespace="http://www.example.org/AccountDetails"></import>
+	
+	
+	<element name="AccountDetailsRequest">
+		<complexType>
+			<sequence>
+				<element name="accountNumber" type="string"></element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="AccountDetailsResponse">
+		<complexType>
+			<sequence>
+				<element name="AccountDetails" type="pref:Account"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+</schema>
